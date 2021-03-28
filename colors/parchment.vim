@@ -257,3 +257,61 @@ let g:terminal_color_14 = s:cyan[1]
 let g:terminal_color_15 = s:pale_yellow[1]
 
 " }}}
+
+" ft_begin: zig {{{
+" builtin: https://github.com/ziglang/zig.vim {{{
+highlight! link zigBuiltinFn Special
+highlight! link zigKeyword Special
+highlight! link zigVarDecl Special
+" }}}
+" ft_end }}}
+
+" Plugins: {{{
+" " nvim-treesitter/nvim-treesitter {{{
+highlight! link TSAnnotation Purple
+highlight! link TSAttribute Yellow
+highlight! link TSBoolean Yellow
+highlight! link TSCharacter Green
+highlight! link TSComment Comment
+highlight! link TSConditional Purple
+highlight! link TSConstBuiltin YellowItalic
+highlight! link TSConstMacro Cyan
+highlight! link TSConstant YellowItalic
+highlight! link TSConstructor Fg
+highlight! link TSError ErrorText
+highlight! link TSException Purple
+highlight! link TSField Blue
+highlight! link TSFloat Yellow
+highlight! link TSFuncBuiltin Blue
+highlight! link TSFuncMacro Blue
+highlight! link TSFunction Blue
+highlight! link TSInclude RedItalic
+highlight! link TSKeyword Special
+highlight! link TSKeywordFunction Special
+highlight! link TSLabel Purple
+highlight! link TSMethod Blue
+highlight! link TSNamespace YellowItalic
+highlight! link TSNumber Yellow
+highlight! link TSOperator Purple
+highlight! link TSParameter CyanItalic
+highlight! link TSParameterReference CyanItalic
+highlight! link TSProperty Blue
+highlight! link TSPunctBracket Fg
+highlight! link TSPunctDelimiter Grey
+highlight! link TSPunctSpecial Fg
+highlight! link TSRepeat Purple
+highlight! link TSString String
+highlight! link TSStringEscape Yellow
+highlight! link TSStringRegex Yellow
+highlight! link TSStructure RedItalic
+highlight! link TSTag RedItalic
+highlight! link TSTagDelimiter Purple
+highlight! link TSText String
+call s:Style('TSEmphasis', [], [], 'bold')
+call s:Style('TSUnderline', [], [], 'underline')
+highlight! link TSType Blue
+highlight! link TSTypeBuiltin Blue
+highlight! link TSURI markdownUrl
+highlight! link TSVariable Fg
+highlight! link TSVariableBuiltin YellowItalic
+" }}}
