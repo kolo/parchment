@@ -30,6 +30,7 @@ let s:pale_magenta = [13, '#ffeaff']
 let s:pale_cyan =    [14, '#eaffff']
 let s:pale_yellow =  [15, '#ffffea']
 let s:shadow =       [ 6, '#808075']
+let s:bright_yellow =[11, '#f9fe7b']
 
 " Sets the text color, background color, and attributes for the given
 " highlight group, in both terminal and gui vim. The values of a:hlgroup and
@@ -186,8 +187,8 @@ call s:Style('NonText',        s:cyan,        s:pale_cyan,    '')
 call s:Style('EndOfBuffer',    [],            [],             'bold')
 call s:Style('SpecialKey',     s:cyan,        s:pale_cyan,    '')
 call s:Style('Conceal',        [],            [],             '')
-call s:Style('LineNr',         [],            s:pale_gray,    '')
-call s:Style('CursorLineNr',   [],            s:pale_gray,    '')
+call s:Style('LineNr',         [],            s:pale_yellow,    '')
+call s:Style('CursorLineNr',   [],            s:pale_yellow,    '')
 call s:Style('ErrorMsg',       s:pale_yellow, s:red,          'bold')
 call s:Style('MoreMsg',        [],            [],             'bold')
 call s:Style('ModeMsg',        [],            [],             'bold')
@@ -210,7 +211,7 @@ call s:Style('VertSplit',      [],            s:pale_gray,    '')
 call s:Style('StatusLine',     [],            s:pale_gray,    'bold')
 call s:Style('StatusLineNC',   s:shadow,      s:pale_gray,    '')
 call s:Style('WildMenu',       s:pale_yellow, s:cyan,         'bold')
-call s:Style('Search',         [],            [],             'bold')
+call s:Style('Search',         [],            s:bright_yellow,'bold')
 call s:Style('IncSearch',      [],            s:pale_blue,    'bold')
 call s:Style('Directory',      s:blue,        [],             'bold')
 call s:Style('DiffAdd',        s:green,       s:pale_green,   '')
